@@ -1,21 +1,22 @@
 # -*- coding: utf-8 -*-
 
 import menu
-import alunos
+import perguntas
+import jogar
 import util
 
 
 # nome dos ficheiros
-fxAlunos = "fxAlunos.dat"
+fxPerguntas = "perguntas.dat"
 
 def ler_ficheiros():
 	# adicionar todos ficheiros a ler
-	alunos.listaAlunos = util.ler_ficheiro(fxAlunos)
+	perguntas.listaPerguntas = util.ler_ficheiro(fxPerguntas)
 
 
 def escrever_ficheiros():
 	# adicionar todos ficheiros a guardar
-	util.escrever_ficheiro(fxAlunos, alunos.listaAlunos)
+	util.escrever_ficheiro(fxPerguntas, perguntas.listaPerguntas)
 
 
 
@@ -28,9 +29,9 @@ while not terminar:
     op = menu.principal()
     
     if op == '1':
-        alunos.gerir()
+        perguntas.gerir()
     elif op == '2':
-        pass    #por fazer
+        jogar.gerir()
     elif op == '0':
         terminar = True
 
