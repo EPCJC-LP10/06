@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+11# -*- coding: utf-8 -*-
 
 import menu
 import perguntas

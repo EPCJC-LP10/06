@@ -12,7 +12,7 @@ def principal():
     print
     print "   0. Sair" 
     print"________________________________"
-    op = raw_input("Opçao: ")
+    op = raw_input("Opcao: ")
     return op
 
 
@@ -38,11 +38,11 @@ def categorias():
     print "1. Capitais"
     print "2. Futebol"
     
-    op = raw_input("Opção: ")
+    op = raw_input("Opcão: ")
     return op
 
 if __name__ == "__main__":
-    print "Este programa não deve ser executado diretamente"
+    print "Este programa nao deve ser executado diretamente"
 
 
 

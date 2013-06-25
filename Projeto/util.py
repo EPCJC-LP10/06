@@ -9,7 +9,7 @@ def ler_ficheiro(ficheiro):
 		lista = pickle.load(f)		
 		f.close
 	except:
-		print "Ficheiro %s não existe!" % (ficheiro)
+		print "Ficheiro %s nao existe!" % (ficheiro)
 
 	return lista
 
