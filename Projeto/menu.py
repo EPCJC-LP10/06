@@ -18,6 +18,9 @@ def principal():
     print "   0. Sair" 
     print"________________________________"
     op = raw_input("Opcao: ")
+<<<<<<< HEAD
+>>>>>>> 7ac8ecabc138a778ec054bf187668b24e2288c5f
+=======
 >>>>>>> 7ac8ecabc138a778ec054bf187668b24e2288c5f
     return op
 
@@ -53,4 +56,9 @@ def categorias():
 
 if __name__ == "__main__":
     print "Este programa nao deve ser executado diretamente"
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7ac8ecabc138a778ec054bf187668b24e2288c5f
 
