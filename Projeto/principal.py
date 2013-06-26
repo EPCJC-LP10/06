@@ -6,35 +6,35 @@ import util
 
 
 # nome dos ficheiros
-fxAlunos = "fxAlunos.dat"
+fxPerguntas = "perguntas.dat"
 
 def ler_ficheiros():
 	# adicionar todos ficheiros a ler
-	alunos.listaAlunos = util.ler_ficheiro(fxAlunos)
+	perguntas.listaPerguntas = util.ler_ficheiro(fxPerguntas)
 
 
 def escrever_ficheiros():
 	# adicionar todos ficheiros a guardar
-	util.escrever_ficheiro(fxAlunos, alunos.listaAlunos)
+	util.escrever_ficheiro(fxPerguntas, perguntas.listaPerguntas)
 
 
 
 # Bloco Principal
 
-#ler_ficheiros()
+1ler_ficheiros()
 
 terminar = False
 while not terminar:
     op = menu.principal()
     
     if op == '1':
-        alunos.gerir()
+        perguntas.gerir()
     elif op == '2':
         pass    #por fazer
     elif op == '0':
         terminar = True
 
 
-#escrever_ficheiros()
+escrever_ficheiros()
 
 

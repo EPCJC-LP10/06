@@ -37,7 +37,7 @@ def inserir():
     categoria = raw_input("Qual a categoria? ")
     
     
-    enunciado = raw_input ("        Enunciado da Pergunta: ")
+    enunciado = raw_input ("Enunciado da Pergunta: ")
     hip1 = raw_input      ("Primeira hipótese de resposta: ")
     hip2 = raw_input      (" Segunda hipótese de resposta: ")
     hip3 = raw_input      ("Terceira hipótese de resposta: ")
@@ -77,8 +77,8 @@ def listar():
         
   
 
-def eliminar_aluno():
-    cod = input ("Código do aluno a eliminar --> ")
+def eliminar_pergunta():
+    cod = input ("Código da pergunta a eliminar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:
@@ -90,7 +90,7 @@ def eliminar_aluno():
 
 
     
-def alterar_aluno():
+def alterar_pergunta():
     cod = input ("Código do aluno a alterar --> ")
     pos = encontrar_posicao(cod)
 

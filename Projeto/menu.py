@@ -1,33 +1,33 @@
 # -*- coding: utf-8 -*-
 
 def principal():
+    print"_______________/\_______________"
+    print      " **** Testes ****** "
+    print      " Escolha uma opcao"
+    print "   1. Gestao de Perguntas"
     print
-    print " **** MENU ****** "
-    print
-    print "   1. Gestão de Alunos"
-    print "   2. Registar Presença (não implementado)"
-    print 
-    print "   0. Sair"
-    print 
+    print "   2. JOGAR"  
+    print "                               "  
 
-    op = raw_input("Opção: ")
+
+    op = raw_input("Opçao: ")
   
     return op
 
 
-def alunos():
+def perguntas():
     print
-    print " *** Menu Alunos **** "
+    print " *** Menu Perguntas **** "
     print
-    print "1. Inserir novo aluno"
-    print "2. Listar todos alunos"
-    print "3. Pesquisar aluno"
-    print "4. Alterar dados de um aluno"
-    print "5. Eliminar aluno"
+    print "1. Inserir nova Pergunta"
+    print "2. Listar todos perguntas"
+    print "3. Pesquisar perguntas"
+    print "4. Alterar "
+    print "5. Eliminar pergunta"
     print 
     print "0. Menu Anterior"
 
-    op = raw_input("Opção: ")
+    op = raw_input("Opçao: ")
     return op
 
 
