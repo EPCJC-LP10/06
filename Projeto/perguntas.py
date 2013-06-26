@@ -26,7 +26,7 @@ def inserir():
     pos = encontrar_posicao(cod)
 
     if pos >= 0:
-        print "CÛdigo j· existe"
+        print "C√≥digo j√° existe"
         return
 
     #ler dados
@@ -38,33 +38,33 @@ def inserir():
     
     
     enunciado = raw_input ("        Enunciado da Pergunta: ")
-    hip1 = raw_input      ("Primeira hipÛtese de resposta: ")
-    hip2 = raw_input      (" Segunda hipÛtese de resposta: ")
-    hip3 = raw_input      ("Terceira hipÛtese de resposta: ")
+    hip1 = raw_input      ("Primeira hip√≥tese de resposta: ")
+    hip2 = raw_input      (" Segunda hip√≥tese de resposta: ")
+    hip3 = raw_input      ("Terceira hip√≥tese de resposta: ")
     print
-    certa = raw_input("Qual a hipÛtese correta ( 1 / 2 / 3 ): ")
+    certa = raw_input("Qual a hip√≥tese correta ( 1 / 2 / 3 ): ")
     
     registo = perguntaReg(cod, categoria, enunciado, hip1, hip2, hip3, certa)
     listaPerguntas.append(registo)
 
 
-def pesquisar_aluno():
-    cod = input("Qual o codigo do aluno a pesquisar? ")
+def pesquisar_codigo():
+    cod = input("Qual o codigo a pesquisar? ")
 
     pos = encontrar_posicao(cod)
 
     if pos == -1:
-        print "N„o existe aluno com esse cÛdigo"
+        print "N√£o existe esse c√≥digo"
         return
 
-    print "CÛdigo: ", listaPerguntas[pos].id
+    print "C√≥digo: ", listaPerguntas[pos].id
     print "Nome: ", listaPerguntas[pos].nome
     
 
 
 def listar():
     for i in range (len(listaPerguntas)):
-        print "CÛdigo: ", listaPerguntas[i].id
+        print "C√≥digo: ", listaPerguntas[i].id
         if listaPerguntas[i].categoria == 1:
             print "Categoria: Capitais"
         else:
@@ -73,32 +73,32 @@ def listar():
         print "\t\t1: ", listaPerguntas[i].hip1
         print "\t\t2: ", listaPerguntas[i].hip2
         print "\t\t3: ", listaPerguntas[i].hip3
-        print "\tHipÛtese correta: ", listaPerguntas[i].certa
+        print "\tHip√≥tese correta: ", listaPerguntas[i].certa
         
   
 
 def eliminar_aluno():
-    cod = input ("CÛdigo do aluno a eliminar --> ")
+    cod = input ("C√≥digo do aluno a eliminar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:
-        print "N„o existe aluno com esse cÛdigo"
+        print "N√£o existe aluno com esse c√≥digo"
         return
 
-    # TODO: Confirmar eliminaÁ„o
+    # TODO: Confirmar elimina√ß√£o
     listaPerguntas.pop(pos)
 
 
     
 def alterar_aluno():
-    cod = input ("CÛdigo do aluno a alterar --> ")
+    cod = input ("C√≥digo do aluno a alterar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:
-        print "N„o existe aluno com esse cÛdigo"
+        print "N√£o existe aluno com esse c√≥digo"
         return
 
-    # sÛ altera o nome
+    # s√≥ altera o nome
     novonome = raw_input("Qual o nome? ")
     listaPerguntas[pos] = listaPerguntas[pos]._replace(nome=novonome)
 
@@ -130,4 +130,4 @@ def gerir():
 
 
 if __name__ == "__main__":
-    print "Este programa n„o deve ser executado diretamente"
+    print "Este programa n√£o deve ser executado diretamente"
