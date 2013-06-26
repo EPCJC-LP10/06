@@ -4,7 +4,6 @@ def principal():
     print
     print " **** MENU ****** "
     print
-<<<<<<< HEAD
     print "   1. Gestão de Alunos"
     print "   2. Registar Presença (não implementado)"
     print 
@@ -12,16 +11,7 @@ def principal():
     print 
 
     op = raw_input("Opção: ")
-=======
-    print"--------------------------------"
-    print
-    print "   0. Sair" 
-    print"________________________________"
-    op = raw_input("Opcao: ")
-<<<<<<< HEAD
->>>>>>> 7ac8ecabc138a778ec054bf187668b24e2288c5f
-=======
->>>>>>> 7ac8ecabc138a778ec054bf187668b24e2288c5f
+  
     return op
 
 
@@ -41,8 +31,6 @@ def alunos():
     return op
 
 
-<<<<<<< HEAD
-=======
 def categorias():
     print
     print " Escolha a categoria "
@@ -52,13 +40,9 @@ def categorias():
     
     op = raw_input("Opcão: ")
     return op
->>>>>>> 7ac8ecabc138a778ec054bf187668b24e2288c5f
+
 
 if __name__ == "__main__":
     print "Este programa nao deve ser executado diretamente"
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 7ac8ecabc138a778ec054bf187668b24e2288c5f
 
