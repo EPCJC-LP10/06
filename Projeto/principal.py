@@ -21,7 +21,7 @@ def escrever_ficheiros():
 
 # Bloco Principal
 
-1ler_ficheiros()
+ler_ficheiros()
 
 terminar = False
 while not terminar:
